@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>PFJA SECTI</title>
+  </head>
+  <body>
+    <!-- <header>HEADER</header> -->
+
+    <main class="conteudo">
+      <section class="conteudo__formulario">
+        <form action="" method="post">
+          <h1 class="conteudo_formulario_titulo">Formulário de inscrição</h1>
+
+          <div class="form section" id="section1">
+            <h1 class="conteudo_formulario_titulo2">Dados Pessoais</h1>
+            <hr />
+
+            <div class="row">
+              <div class="formulario__input col-12">
+                <label for=""
+                  >Nome Completo <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+
+            <div class="group-input">
+              <div class="formulario__input col-6">
+                <label for=""
+                  >CPF <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="" id="cpf"/>
+              </div>
+
+              <div class="formulario__input col-6">
+                <label for=""
+                  >RG <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+
+            <div class="group-input">
+              <div class="formulario__input col-6">
+                <label for=""
+                  >Data de Nascimento <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="date" name="" id="" />
+              </div>
+
+              <div class="formulario__input col-6">
+                <label for=""
+                  >Gênero <span class="campo_obrigatorio">*</span> :</label
+                >
+                <div class="checkbox-group">
+                  <input
+                    type="radio"
+                    id="genero-masculino"
+                    name="genero"
+                    value="masculino"
+                  />
+                  <label for="genero-masculino">Masculino</label>
+
+                  <input
+                    type="radio"
+                    id="genero-feminino"
+                    name="genero"
+                    value="feminino"
+                  />
+                  <label for="genero-feminino">Feminino</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input">
+              <button
+                class="conteudo__formulario_button"
+                type="button"
+                onclick="next()"
+              >
+                Próxima
+              </button>
+            </div>
+
+          </div>
+
+          <div id="section2" class="form section hidden">
+            <h1 class="conteudo_formulario_titulo2">Endereço</h1>
+  
+            <hr />
+  
+            <div class="row">
+              <div class="group-input">
+                <div class="formulario__input col-4">
+                  <label for=""
+                    >Cep <span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="text" name="" id="" />
+                </div>
+  
+                <div class="formulario__input col-2">
+                  <label for=""
+                    >UF <span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="text" name="" id="uf" />
+                </div>
+  
+                <div class="formulario__input col-6">
+                  <label for=""
+                    >Cidade <span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+  
+              <div class="group-input">
+                <div class="formulario__input col-5">
+                  <label for=""
+                    >Bairro<span class="campo_obrigatorio">*</span> :</label
+                  >
+                  <input type="text" name="" id="" />
+                </div>
+  
+                <div class="formulario__input col-5">
+                  <label for=""
+                    >Rua<span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="text" name="" id="" />
+                </div>
+  
+                <div class="formulario__input col-2">
+                  <label for=""
+                    >Número<span class="campo_obrigatorio"></span> :
+                  </label>
+                  <input type="text" name="" id="" />
+                  <div class="teste">
+                    <input type="checkbox" name="" id="" />
+                    <label for="">S/N</label>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="formulario__input col-12">
+                <label for="">Complemento : </label>
+                <input type="text" name="" id="" />
+              </div>
+  
+              <div class="formulario__button">
+                <button
+                  class="conteudo__formulario_button"
+                  type="button"
+                  onclick="prev()"
+                >
+                  Anterior
+                </button>
+                <button
+                  class="conteudo__formulario_button"
+                  type="button"
+                  onclick="next()"
+                >
+                  Próxima
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="section3" class="form section hidden">
+            <h1 class="conteudo_formulario_titulo2">Comprovantes</h1>
+  
+            <hr />
+  
+            <div class="row">
+              <div class="group-input">
+                <div class="formulario__input col-6">
+                  <label for="">Escolaridade: </label>
+  
+                  <label class="input-upload" for="escolaridade">
+                    <span class="material-symbols-outlined"> upload </span>
+                    <p class="input__upload__paragrafo">Enviar arquivo</p>
+                    <input type="file" id="escolaridade" class="hidden" />
+                  </label>
+                </div>
+  
+                <div class="formulario__input col-6">
+                  <label for="">Residência: </label>
+  
+                  <label class="input-upload">
+                    <span class="material-symbols-outlined"> upload </span>
+                    <p class="input__upload__paragrafo">Enviar arquivo</p>
+                    <input type="file" id="escolaridade" class="hidden" />
+                  </label>
+                </div>
+              </div>
+  
+              <div class="formulario__button">
+                <button
+                  class="conteudo__formulario_button"
+                  type="button"
+                  onclick="prev()"
+                >
+                  Anterior
+                </button>
+                <button
+                  class="conteudo__formulario_button"
+                  type="button"
+                  onclick="next()"
+                >
+                  Próxima
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div id="section4" class="form section hidden">
+            <h1 class="conteudo_formulario_titulo2">Contato</h1>
+  
+            <hr />
+  
+            <div class="row">
+              <div class="group-input">
+                <div class="formulario__input col-6" id="telefone">
+                  <label for="">Telefone: </label>
+                  <input type="email" name="" />
+                </div>
+  
+                <div class="formulario__input col-6" id="telefone">
+                  <label for=""
+                    >Celular <span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="email" name="" id="" />
+                </div>
+              </div>
+  
+              <div class="formulario__input col-12">
+                <label for=""
+                  >E-mail <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="email" name="" id="" />
+              </div>
+  
+              <div class="formulario__input col-12">
+                <label for=""
+                  >Confirme e-mail <span class="campo_obrigatorio">*</span> :
+                </label>
+                <input type="email" name="" id="" />
+              </div>
+  
+              <div class="group-input">
+                <div class="formulario__input col-6">
+                  <label for=""
+                    >Senha <span class="campo_obrigatorio">*</span> :</label
+                  >
+                  <input type="password" name="" id="" />
+                </div>
+  
+                <div class="formulario__input col-6">
+                  <label for=""
+                    >Confirme senha <span class="campo_obrigatorio">*</span> :
+                  </label>
+                  <input type="password" name="" id="" />
+                </div>
+              </div>
+  
+              <div class="formulario__button">
+                <button
+                  class="conteudo__formulario_button"
+                  type="button"
+                  onclick="prev()"
+                >
+                  Anterior
+                </button>
+  
+                <button class="conteudo__formulario_button" type="submit">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="conteudo_imagem">
+        <img class="conteudo__logo" src="assets/img/logo.png" alt="" />
+
+        <h1 class="conteudo__imagem_titulo">Programa Formação de Jovens e Adultos</h1>
+      </section>
+    </main>
+
+    <footer>
+      <img class="footer_logo" src="assets/img/LOGO_GOV_SECTI.png" alt="" />
+      <img
+        class="footer_logo_fapema"
+        src="assets/img/logo-FAPEMA-Branca.png"
+        alt=""
+      />
+    </footer>
+  </body>
+  <script src="assets/js/app.js"></script>
+</html>

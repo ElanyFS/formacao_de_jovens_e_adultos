@@ -1,0 +1,97 @@
+
+/* RESPONSIVIDADE */
+
+/* @media(max-width: 1950px){
+  .conteudo {
+    width: auto;
+    justify-content: center;
+    padding: 3%;
+    align-items: center;
+    margin-top: 5%;
+  }
+} */
+
+/* @media(min-width:1400px){
+  .conteudo {
+    width: auto;
+    justify-content: center;
+    padding: 2%;
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+    align-items: center;
+  }
+
+  .conteudo_imagem{
+    flex-direction: column-reverse;
+    gap: 4%;
+  }
+} */
+
+/* @media (max-width: 1370px) {
+  .conteudo {
+    width: auto;
+    justify-content: center;
+    padding: 0%;
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+    align-items: center;
+  }
+
+  .conteudo__formulario {
+    width: auto;
+  }
+
+  .conteudo__logo {
+    display: none;
+  }
+
+  .conteudo__imagem_titulo{
+    text-align: center;
+    padding: 1%;
+  }
+} */
+
+/* @media (min-width: 58px) and (max-width: 825px) {
+  .conteudo__formulario {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .group-input {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+  }
+
+  .formulario__input {
+    width: 100%;
+  }
+
+  .col-2 {
+    width: 50%;
+  }
+
+  .conteudo__formulario_button {
+    width: auto;
+  }
+
+  .footer_logo {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .footer_logo_fapema {
+    width: 25%;
+  }
+
+  .checkbox-group{
+    gap: 0.4rem;
+    justify-content: left;
+  }
+}
+
+@media (max-width: 377px) {
+  .label_button_selecionar {
+    display: none;
+  }
+} */
