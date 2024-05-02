@@ -204,7 +204,6 @@ footer {
     flex-direction: column-reverse;
     justify-content: flex-end;
     padding: 12% 7% 0% 7%;
-    /* gap: 5%; */
   }
 
   .conteudo_imagem {
@@ -240,7 +239,6 @@ footer {
 @media (max-width: 777px) {
   .conteudo {
     padding: 10% 0%;
-    background-color: #f37820;
   }
 
   .conteudo__formulario {
