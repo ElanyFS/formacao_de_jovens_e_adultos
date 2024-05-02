@@ -37,3 +37,13 @@ function next() {
 function prev() {
   navigate(false);
 }
+
+// Mascara CPF
+
+var options = {
+  onKeyPress: function (op) {
+    var masks = ["000.000.000-00"];
+    $("#cpf").mask(masks[0], op);
+  },
+};
+$("#cpf").mask("000.000.000-00#", options);
